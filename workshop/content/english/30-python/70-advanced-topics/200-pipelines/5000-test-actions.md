@@ -8,7 +8,7 @@ Stepping back, we can see a problem now that our app is being deployed by our pi
 
 First edit `cdk_workshop/cdk_workshop_stack.py` to get these values and expose them as properties of our stack:
 
-{{<highlight python "hl_lines=13-19 37 42 48-56">}}
+{{<highlight python "hl_lines=4 13-19 37 42 48-56">}}
 from constructs import Construct
 from aws_cdk import (
     Stack,
@@ -93,7 +93,7 @@ from aws_cdk import (
     aws_codecommit as codecommit,
     pipelines as pipelines
 )
-from pipeline_stage import WorkshopPipelineStage
+from cdk_workshop.pipeline_stage import WorkshopPipelineStage
 
 class WorkshopPipelineStack(Stack):
 
@@ -199,3 +199,5 @@ Commit those changes, wait for the pipeline to re-deploy the app, and navigate b
 ![](./pipeline-tests.png)
 
 Congratulations! You have successfully created a CD pipeline for your application complete with tests and all! Feel free to explore the console to see the details of the stack created, or check out the [API Reference](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html) section on CDK Pipelines and build one for your application.
+
+{{< nextprevlinks >}}

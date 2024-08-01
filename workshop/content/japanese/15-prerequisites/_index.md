@@ -1,6 +1,6 @@
 +++
 title = "必要条件"
-chapter = true
+bookCollapseSection = true
 weight = 15
 +++
 
@@ -8,7 +8,7 @@ weight = 15
 
 このワークショップを行うには、以下のものが必要です。
 
-{{% children showhidden="false" %}}
+{{< children showhidden="false" />}}
 
 これらのツールがすでにマシンにすでにインストールされている場合は、これらの手順を省略することができます。
 
@@ -19,3 +19,5 @@ weight = 15
 ## 参考
 
 - [Prerequisites in the AWS CDK User Guide](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_prerequisites)
+
+{{< nextprevlinks >}}

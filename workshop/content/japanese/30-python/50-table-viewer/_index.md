@@ -1,7 +1,7 @@
 +++
 title = "コンストラクトライブラリの利用"
 weight = 50
-chapter = true
+bookFlatSection = true
 +++
 
 # コンストラクトライブラリの利用
@@ -11,3 +11,4 @@ chapter = true
 
 ![](/images/table-viewer.png)
 
+{{< nextprevlinks >}}

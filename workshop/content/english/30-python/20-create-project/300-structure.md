@@ -15,7 +15,7 @@ You'll see something like this:
 
 ![](./structure.png)
 
-* .venv - The python virtual envirnment information discussed in the previous section.
+* .venv - The python virtual environment information discussed in the previous section.
 * cdk_workshop — A Python module directory.
   * cdk_workshop.egg-info - Folder that contains build information relevant for the packaging on the project
   * cdk_workshop_stack.py—A custom CDK stack construct for use in your CDK application.
@@ -25,8 +25,7 @@ You'll see something like this:
 * app.py — The “main” for this sample application.
 * cdk.json — A configuration file for CDK that defines what executable CDK should run to generate the CDK construct tree.
 * README.md — The introductory README for this project.
-* requirements.txt—This file is used by pip to install all of the dependencies for your application. In this case, it contains only -e . This tells pip to install the requirements specified in setup.py. It also tells pip to run python setup.py develop to install the code in the cdk_workshop module so that it can be edited in place.
-* setup.py — Defines how this Python package would be constructed and what the dependencies are.
+* requirements.txt—This file is used by pip to install all of the dependencies for your application. 
 
 ## Your app's entry point
 
@@ -89,3 +88,5 @@ The stack includes:
 - SQS Queue (`sqs.Queue`)
 - SNS Topic (`sns.Topic`)
 - Subscribes the queue to receive any messages published to the topic (`topic.add_subscription`)
+
+{{< nextprevlinks >}}

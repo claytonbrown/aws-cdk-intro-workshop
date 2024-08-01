@@ -136,7 +136,7 @@ CloudFormation のデプロイが完了するには 67秒かかったのに対�
 
 ## CDK Watch
 
-`cdk watch` は 毎回 `cdk deploy` または `cdk deploy -—hotswap` を呼び出すよりも便利です。。`cdk deploy` に似ていますが、ワンショット操作ではなく、コードとアセットに変更がないか監視し、変更が検出されると自動的にデプロイを試みます。デフォルトでは、`cdk watch` は `—-hotswap` フラグを使います。変更内容を調べて、ホットスワップできるかどうかを判断します。`cdk watch —-no-hotswap` を呼び出すと、ホットスワップ動作が無効になります。
+`cdk watch` は 毎回 `cdk deploy` または `cdk deploy -—hotswap` を呼び出すよりも便利です。`cdk deploy` に似ていますが、ワンショット操作ではなく、コードとアセットに変更がないか監視し、変更が検出されると自動的にデプロイを試みます。デフォルトでは、`cdk watch` は `—-hotswap` フラグを使います。変更内容を調べて、ホットスワップできるかどうかを判断します。`cdk watch —-no-hotswap` を呼び出すと、ホットスワップ動作が無効になります。
 
 一度設定したら、`cdk watch`を使用して、ホットスワップ可能な変更と、完全な CloudFormation デプロイを必要とする変更の両方を検出できます。
 
@@ -229,3 +229,5 @@ arn:aws:cloudformation:REGION:ACCOUNT-ID:stack/CdkWorkshopStack/STACK-ID
 しかし、もし望むなら、単に `cdk watch` をオンにしておくことができます。完全なデプロイを行う必要がある場合、`cdk watch` は `cdk deploy` を呼び出します。
 
 `cdk watch` を使う方法については、[Increasing Development Speed with CDK Watch](https://aws.amazon.com/blogs/developer/increasing-development-speed-with-cdk-watch/) をお読みください
+
+{{< nextprevlinks >}}

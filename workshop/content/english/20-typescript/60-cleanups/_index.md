@@ -1,7 +1,7 @@
 +++
 title = "Clean up"
 weight = 60
-chapter = true
+bookFlatSection = true
 +++
 
 # Clean up your stack
@@ -63,6 +63,12 @@ export class HitCounter extends Construct {
   }
 }
 {{</highlight>}}
+
+Since we made a change in the construct file, we need to redeploy the stack to put the changes into effect. Use `cdk deploy`:
+
+```
+cdk deploy
+```
 
 Additionally, the Lambda function created will generate CloudWatch logs that are
 permanently retained. These will not be tracked by CloudFormation since they are

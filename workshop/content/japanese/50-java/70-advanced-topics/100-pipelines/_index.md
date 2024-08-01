@@ -1,7 +1,7 @@
 +++
 title = "CDK Pipelines"
 weight = 200
-chapter = true
+bookCollapseSection = true
 +++
 
 # CDK Pipelines
@@ -13,3 +13,5 @@ chapter = true
 それぞれのパイプラインは、ソースコードの管理方法から、ビルドされた全てのアーティファクトのデプロイ方法まで、デプロイプロセスのフェーズを表す「ステージ」で構成されます。
 
 ![](./pipeline-stages.png)
+
+{{< nextprevlinks >}}

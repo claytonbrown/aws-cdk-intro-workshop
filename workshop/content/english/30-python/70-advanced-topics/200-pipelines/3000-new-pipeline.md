@@ -9,7 +9,7 @@ Now we are ready to define the basics of the pipeline.
 
 Return to the file `pipeline_stack.py` and edit as follows:
 
-{{<highlight python "hl_lines=13 18-30">}}
+{{<highlight python "hl_lines=5 17-29">}}
 from constructs import Construct
 from aws_cdk import (
     Stack,
@@ -62,3 +62,5 @@ CdkPipelines auto-update for each commit in a source repo, so this is the *last 
 Once deployment is finished, you can go to the [CodePipeline console](https://console.aws.amazon.com/codesuite/codepipeline/pipelines) and you will see a new pipeline! If you navigate to it, it should look like this:
 
 ![](./pipeline-init.png)
+
+{{< nextprevlinks >}}

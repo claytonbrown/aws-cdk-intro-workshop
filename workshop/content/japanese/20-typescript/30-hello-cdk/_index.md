@@ -1,6 +1,6 @@
 +++
 title = "Hello, CDK!"
-chapter = true
+bookFlatSection = true
 weight = 30
 +++
 
@@ -14,3 +14,4 @@ weight = 30
 
 はじめに、サンプルコードをクリーンアップしましょう。
 
+{{< nextprevlinks >}}

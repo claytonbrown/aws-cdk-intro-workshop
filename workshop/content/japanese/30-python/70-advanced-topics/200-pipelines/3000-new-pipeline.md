@@ -9,14 +9,13 @@ weight = 130
 
 `pipeline_stack.py` を開き、以下のように編集します。
 
-{{<highlight python "hl_lines=13 18-30">}}
+{{<highlight python "hl_lines=5 17-29">}}
 from constructs import Construct
 from aws_cdk import (
     Stack,
     aws_codecommit as codecommit,
     pipelines as pipelines,
 )
-from cdk_workshop.pipeline_stage import WorkshopPipelineStage
 
 class WorkshopPipelineStack(Stack):
     def __init__(self, scope: Construct, id: str, **kwargs) -> None:
@@ -62,3 +61,5 @@ CDK パイプラインはソースリポジトリのコミットごとに自動�
 デプロイが完了したら [CodePipeline コンソール](https://console.aws.amazon.com/codesuite/codepipeline/pipelines) を開くと、新しいパイプラインを確認できます。パイプラインを開くと、以下のような画面を確認できます。
 
 ![](./pipeline-init.png)
+
+{{< nextprevlinks >}}

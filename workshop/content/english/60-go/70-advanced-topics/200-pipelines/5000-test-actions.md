@@ -227,7 +227,7 @@ func (s *workshopPipelineStage) HcEndpoint() awscdk.CfnOutput {
 }
 {{</highlight>}}
 
-Now we can add those values to our actions in `lib/pipeline-stack.ts` by getting the `stackOutput` of our pipeline stack:
+Now we can add those values to our actions in `infra/pipeline-stack.go` by getting the `stackOutput` of our pipeline stack:
 {{<highlight go "hl_lines=2 8 15">}}
 	// CODE HERE...
 	deployStage := pipeline.AddStage(deploy.Stage(), nil)
@@ -260,3 +260,5 @@ Commit those changes, wait for the pipeline to re-deploy the app, and navigate b
 ![](./pipeline-tests.png)
 
 Congratulations! You have successfully created a CD pipeline for your application complete with tests and all! Feel free to explore the console to see the details of the stack created, or check out the [API Reference](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html) section on CDK Pipelines and build one for your application.
+
+{{< nextprevlinks >}}

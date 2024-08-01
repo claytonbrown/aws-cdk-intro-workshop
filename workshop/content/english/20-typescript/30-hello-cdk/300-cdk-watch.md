@@ -16,7 +16,7 @@ lambda function to respond with `"Good Morning, CDK!"` instead of `"Hello, CDK"`
 
 So far, it seems like the only tool we have at our disposal to update our stack is
 `cdk deploy`. But `cdk deploy` takes time; it has to deploy your CloudFormation
-stack and upload the `lambda` directory from your disk to the boostrap bucket. If
+stack and upload the `lambda` directory from your disk to the bootstrap bucket. If
 we're just changing our lambda code, we don't actually need to update the
 CloudFormation stack, so that part of `cdk deploy` is wasted effort.
 
@@ -296,3 +296,5 @@ deployment, `cdk watch` will call `cdk deploy` for you.
 
 For a deeper dive on `cdk watch` use cases, read
 [Increasing Development Speed with CDK Watch](https://aws.amazon.com/blogs/developer/increasing-development-speed-with-cdk-watch/).
+
+{{< nextprevlinks >}}

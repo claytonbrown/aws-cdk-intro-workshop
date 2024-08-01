@@ -1,7 +1,7 @@
 +++
 title = "コンストラクトライブラリの利用"
 weight = 50
-chapter = true
+bookFlatSection = true
 +++
 
 # コンストラクトライブラリの利用
@@ -10,3 +10,5 @@ chapter = true
 というコンストラクトライブラリをプロジェクトにインポートし、HitCounter テーブルに利用します。
 
 ![](/images/table-viewer.png)
+
+{{< nextprevlinks >}}

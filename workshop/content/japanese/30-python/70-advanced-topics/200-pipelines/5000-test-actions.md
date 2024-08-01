@@ -10,7 +10,7 @@ weight = 150
 
 まずは、`cdk_workshop/cdk_workshop_stack.py` を編集して、スタックのプロパティとして公開するようにします。
 
-{{<highlight python "hl_lines=13-19 37 42 48-56">}}
+{{<highlight python "hl_lines=4 13-19 37 42 48-56">}}
 from constructs import Construct
 from aws_cdk import (
     Stack,
@@ -98,7 +98,7 @@ from aws_cdk import (
     aws_codecommit as codecommit,
     pipelines as pipelines
 )
-from pipeline_stage import WorkshopPipelineStage
+from cdk_workshop.pipeline_stage import WorkshopPipelineStage
 
 class WorkshopPipelineStack(Stack):
 
@@ -208,3 +208,5 @@ class WorkshopPipelineStage(Stage):
 ![](./pipeline-tests.png)
 
 おめでとうございます！アプリケーションのテストも含む完璧な CD パイプラインを作成できました！興味があれば、コンソールで作成されたスタックの詳細を確認したり、[API リファレンス](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-construct-library.html) の CDK パイプラインのセクションを確認してみてください。お持ちのアプリケーションにも CDK パイプラインを作ってみるのはいかがでしょうか？
+
+{{< nextprevlinks >}}

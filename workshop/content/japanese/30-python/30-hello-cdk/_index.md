@@ -1,6 +1,6 @@
 +++
 title = "Hello, CDK!"
-chapter = true
+bookFlatSection = true
 weight = 30
 +++
 
@@ -13,3 +13,5 @@ weight = 30
 ![](/images/hello-arch.png)
 
 はじめに、サンプルコードをクリーンアップしましょう。
+
+{{< nextprevlinks >}}

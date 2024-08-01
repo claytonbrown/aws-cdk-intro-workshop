@@ -84,7 +84,7 @@ git remote add origin XXXXX
 Now all we need to do is to push our code to the repo (`--set-upstream` tells Git to override the current empty main branch on your repo):
 
 ```
-git push --set-upstream origin main
+git push --set-upstream origin master
 ```
 
 Here, CodeCommit will request the credentials you generated in the **Git Credentials** section. You will only have to provide them once.
@@ -93,3 +93,5 @@ Here, CodeCommit will request the credentials you generated in the **Git Credent
 Now you can return to the CodeCommit console and see that your code is all there!
 
 ![](./repo-code.png)
+
+{{< nextprevlinks >}}

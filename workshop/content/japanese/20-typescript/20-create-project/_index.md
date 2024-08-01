@@ -1,6 +1,6 @@
 +++
 title = "新しいプロジェクト"
-chapter = true
+bookFlatSection = true
 weight = 20
 +++
 
@@ -10,3 +10,4 @@ weight = 20
 
 また、CDK Toolkit を使用してサンプルアプリケーション用の AWS CloudFormation テンプレートを合成する方法とアプリケーションをデプロイする方法について学習します。
 
+{{< nextprevlinks >}}

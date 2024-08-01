@@ -1,0 +1,12 @@
+{{- define "stampedStyle" -}}{{- $fingerprinted := . | resources.Fingerprint -}}
+  <link rel="stylesheet" href="{{ $fingerprinted.RelPermalink }}" integrity="{{ $fingerprinted.Data.Integrity }}" />
+{{- end -}}
+{{- define "stampedScript" -}}{{-  $fingerprinted := . | resources.Fingerprint -}}
+  <script src="{{$fingerprinted.RelPermalink}}" integrity="{{ $fingerprinted.Data.Integrity }}"></script>
+{{- end -}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="stylesheet" href='{{ i18n "fontUrl" }}' />
+
+{{ template "stampedStyle" resources.Get "css/cookies-eu-banner.default.css" }}
+{{ template "stampedStyle" resources.Get "css/style.scss" | resources.ExecuteAsTemplate (printf "css/style.%s.scss" .Lang) . | resources.ToCSS  | resources.Minify }}
